@@ -1,0 +1,20 @@
+{
+  "name": "05-intro-component-with-signup-form-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.39.0"
+  }
+}

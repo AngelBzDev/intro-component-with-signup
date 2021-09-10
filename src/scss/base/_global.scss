@@ -1,0 +1,33 @@
+html{
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+*, *::before, *::after{
+   box-sizing: inherit;
+}
+
+body{
+   font-family: $main-font;
+   font-size: $fontSize;
+   background-color: $red;
+   background-image: url('../images/bg-intro-desktop.png');
+   @include tablet{
+      overflow: hidden;
+   }
+}
+
+.container {
+   width: 95%;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+main{
+   @include tablet{
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      align-items: center;
+   }
+}

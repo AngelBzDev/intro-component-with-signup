@@ -1,0 +1,42 @@
+.form{
+   margin: 2rem 0 5rem 0;
+   padding: 2.5rem;
+   @include tablet{
+      padding: 3.5rem;
+      margin: 2rem 0 0 0;
+   }
+   background-color: #fff;
+   border-radius: 1rem;
+   box-shadow: 0 5px 0 rgba(0, 0, 0, .3);
+   input{
+      width: 100%;
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: .6rem;
+      margin-bottom: 1.5rem;
+      font-weight: $semiBold;
+      font-size: $fontSize - .2;
+   }
+   button[type="submit"]{
+      @include button($green);
+      outline: none;
+      border: none;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: $semiBold;
+      font-size: $fontSize - .1; 
+      cursor: pointer;
+      margin-bottom: .5rem;
+      box-shadow: 0 5px 0 #299164ce;
+   }
+   .terms{
+      font-size: $fontSize - .5;
+      color: $grayishBlue;
+      text-align: center;
+      a{
+         font-weight: $bold;
+         color: $red;
+         text-decoration: none;
+      }
+   }
+}

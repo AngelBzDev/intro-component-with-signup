@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Colors */
+/* Font */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-desktop.png");
+}
+@media only screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+/* Layout */
+.info-section {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .info-section {
+    text-align: left;
+  }
+}
+.info-section .title {
+  display: inline-block;
+  margin: 7rem 2rem 1rem 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .info-section .title {
+    font-size: 4.5rem;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+.form-section .offer {
+  padding: 1.5rem 3rem;
+  background: #6055a5;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.form-section .offer p {
+  margin: 0;
+}
+
+.form {
+  margin: 2rem 0 5rem 0;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 768px) {
+  .form {
+    padding: 3.5rem;
+    margin: 2rem 0 0 0;
+  }
+}
+.form input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.form button[type=submit] {
+  padding: 1.5rem 3rem;
+  background: #38cc8c;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 5px 0 #299164ce;
+}
+.form .terms {
+  font-size: 1.1rem;
+  color: #b9b6d3;
+  text-align: center;
+}
+.form .terms a {
+  font-weight: 700;
+  color: #ff7a7a;
+  text-decoration: none;
+}
