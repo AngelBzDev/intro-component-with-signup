@@ -8,15 +8,38 @@
    background-color: #fff;
    border-radius: 1rem;
    box-shadow: 0 5px 0 rgba(0, 0, 0, .3);
+   .input-group{
+      margin-bottom: 1.5rem;
+   }
    input{
       width: 100%;
       padding: 1.5rem;
-      border: 1px solid rgba(0, 0, 0, .1);
+      border: none;
       border-radius: .6rem;
-      margin-bottom: 1.5rem;
       font-weight: $semiBold;
       font-size: $fontSize - .2;
+      &:focus{
+         outline: none;
+      }
    }
+
+   .input{
+      border: 1px solid rgb(221, 216, 216);
+      border-radius: .6rem;
+      display: grid;
+      grid-template-columns: 1fr 10%;
+      align-items: center;
+   }
+
+   .error {
+      border: 2px solid $red;
+      color: $red;
+   }
+
+   .error input {
+      color: $red;
+   }
+
    button[type="submit"]{
       @include button($green);
       outline: none;
@@ -29,6 +52,11 @@
       margin-bottom: .5rem;
       box-shadow: 0 5px 0 #299164ce;
    }
+
+   button:disabled{
+      cursor: not-allowed;
+   }
+
    .terms{
       font-size: $fontSize - .5;
       color: $grayishBlue;

@@ -16,11 +16,6 @@ body {
   background-color: #ff7a7a;
   background-image: url("../images/bg-intro-desktop.png");
 }
-@media only screen and (min-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
 
 .container {
   width: 95%;
@@ -36,6 +31,18 @@ body {
     gap: 4rem;
     align-items: center;
   }
+}
+
+.msj-error {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ff7a7a;
+  margin: 0.2rem 0 0 0;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Layout */
@@ -86,14 +93,33 @@ body {
     margin: 2rem 0 0 0;
   }
 }
+.form .input-group {
+  margin-bottom: 1.5rem;
+}
 .form input {
   width: 100%;
   padding: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 0.6rem;
-  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
+}
+.form input:focus {
+  outline: none;
+}
+.form .input {
+  border: 1px solid #ddd8d8;
+  border-radius: 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr 10%;
+  align-items: center;
+}
+.form .error {
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+}
+.form .error input {
+  color: #ff7a7a;
 }
 .form button[type=submit] {
   padding: 1.5rem 3rem;
@@ -111,6 +137,9 @@ body {
   cursor: pointer;
   margin-bottom: 0.5rem;
   box-shadow: 0 5px 0 #299164ce;
+}
+.form button:disabled {
+  cursor: not-allowed;
 }
 .form .terms {
   font-size: 1.1rem;

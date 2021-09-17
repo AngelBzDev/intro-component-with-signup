@@ -11,9 +11,6 @@ body{
    font-size: $fontSize;
    background-color: $red;
    background-image: url('../images/bg-intro-desktop.png');
-   @include tablet{
-      overflow: hidden;
-   }
 }
 
 .container {
@@ -30,4 +27,16 @@ main{
       gap: 4rem;
       align-items: center;
    }
+}
+
+.msj-error{
+   font-size: 1.2rem;
+   font-style: italic;
+   color: $red;
+   margin: .2rem 0 0 0;
+   text-align: right;
+}
+
+.hidden{
+   display: none;
 }
